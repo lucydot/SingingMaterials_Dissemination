@@ -1,11 +1,11 @@
-# SingingMaterials
+# SingingMaterials Examples
 
 This repository explores the sonification of atomistic simulation data using the [Strauss](https://www.audiouniverse.org/research/strauss) software package.
 We use sonification to listen to the vibrations of materials at an atomic scale; *to hear how the materials sing*. The pre-print paper describing the project is available [here](https://arxiv.org/abs/2603.29037). 
 
 This repo contains scripts, input files and sound examples, demonstrating what the `phonon_sonification` and Strauss packages can do when applied to materials modelling data. 
 
-The `phonon_sonification` Python package underlying these scripts can be found [here](https://github.com/NU-CEM/SingingMaterials).
+The `SingingMaterials` Python package underlying these scripts can be found [here](https://github.com/NU-CEM/SingingMaterials).
 
 This work has been published in the following [pre-print](https://arxiv.org/abs/2603.29037), and will be later published as part of [ICAD proceedings](https://interactive-sonification.org/icad2026/). A `.bib` file is in the repo, and the plain-text citation is: Whalley, L., Shepherd, R., Boehringer, J., Knotts, S., Vickers, P., Caselton, G., Harrison, C., Hogg, B., Ratliff, D., Davenport, C., & Portas, A. (2026). *Singing Materials: Initial experiments in applying sonification to phonon spectra.* arXiv:2603.29037 [cond-mat.mtrl-sci]
 
