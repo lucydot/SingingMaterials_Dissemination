@@ -5,7 +5,7 @@ We use sonification to listen to the vibrations of materials at an atomic scale;
 
 This repo contains scripts, input files and sound examples, demonstrating what the `phonon_sonification` and Strauss packages can do when applied to materials modelling data. 
 
-The `SingingMaterials` Python package underlying these scripts can be found [here](https://github.com/NU-CEM/SingingMaterials).
+The `SingingMaterials` Python package underlying these scripts is developed in the [SingingMaterials](https://github.com/NU-CEM/SingingMaterials) repository and can be installed from [PyPI](https://pypi.org/project/SingingMaterials/).
 
 This work has been published in the following [pre-print](https://arxiv.org/abs/2603.29037), and will be later published as part of [ICAD proceedings](https://interactive-sonification.org/icad2026/). A `.bib` file is in the repo, and the plain-text citation is: Whalley, L., Shepherd, R., Boehringer, J., Knotts, S., Vickers, P., Caselton, G., Harrison, C., Hogg, B., Ratliff, D., Davenport, C., & Portas, A. (2026). *Singing Materials: Initial experiments in applying sonification to phonon spectra.* arXiv:2603.29037 [cond-mat.mtrl-sci]
 
@@ -74,10 +74,11 @@ All the data in this repository has been published as part of our [recent study]
 The notebooks contain links to audio files so that you can listen through your browser to the sonifications which are produced by the code.
 
 If you want to edit or run the notebooks locally you will need to:
-- install the [Strauss](https://www.audiouniverse.org/research/strauss) python package.
-- install the [Materials Project API](https://docs.materialsproject.org/downloading-data/using-the-api/getting-started) python package.
-- register for a Materials Project account generate an API key. More details are [here](https://next-gen.materialsproject.org/api).
-- store the Materials Project API Key in a `.env` file with the MP_API_KEY variable.
-- install the SingingMaterials Python package `pip install SingingMaterials`.
 - `git clone` this full repository, which contains the necessary data and notebooks.
+- install the `SingingMaterials` package and all of its optional dependencies, including [Strauss](https://www.audiouniverse.org/research/strauss) and the [Materials Project API](https://docs.materialsproject.org/downloading-data/using-the-api/getting-started), with `pip install "SingingMaterials[all]"`.
+- register for a Materials Project account and generate an API key. More details are [here](https://next-gen.materialsproject.org/api).
+- store the Materials Project API key in a `.env` file with the `MP_API_KEY` variable.
+- for choral sonifications, download the Solitary Choir samples, which are not distributed with this repository, and set the `PHONON_CHORAL_SAMPLES` variable in your `.env` file to the folder holding the `.wav` files.
+
+The commands in the `phonon_sonification` package also need [`ffmpeg`](https://ffmpeg.org/) on your path to mix sonifications together.
 
