@@ -3,9 +3,9 @@
 This repository explores the sonification of atomistic simulation data using the [Strauss](https://www.audiouniverse.org/research/strauss) software package.
 We use sonification to listen to the vibrations of materials at an atomic scale; *to hear how the materials sing*. The pre-print paper describing the project is available [here](https://arxiv.org/abs/2603.29037). 
 
-This repo contains scripts, input files and sound examples, demonstrating what the `phonon_sonification` and Strauss packages can do when applied to materials modelling data. 
+This repo contains scripts, input files and sound examples, demonstrating what the `SingingMaterials` and Strauss packages can do when applied to materials modelling data. 
 
-The `SingingMaterials` Python package underlying these scripts is developed in the [SingingMaterials](https://github.com/NU-CEM/SingingMaterials) repository and can be installed from [PyPI](https://pypi.org/project/SingingMaterials/).
+The `SingingMaterials` Python package underlying these scripts is developed in the [SingingMaterials](https://github.com/lucydot/SingingMaterials) repository and can be installed from [PyPI](https://pypi.org/project/SingingMaterials/).
 
 This work has been published in the following [pre-print](https://arxiv.org/abs/2603.29037), and will be later published as part of [ICAD proceedings](https://interactive-sonification.org/icad2026/). A `.bib` file is in the repo, and the plain-text citation is: Whalley, L., Shepherd, R., Boehringer, J., Knotts, S., Vickers, P., Caselton, G., Harrison, C., Hogg, B., Ratliff, D., Davenport, C., & Portas, A. (2026). *Singing Materials: Initial experiments in applying sonification to phonon spectra.* arXiv:2603.29037 [cond-mat.mtrl-sci]
 
@@ -17,7 +17,7 @@ The continuum from data representation to data abstraction is briefly discussed 
 
 ## Where does the atomistic simulation data come from?
 
-The `phonon_sonification` package interfaces with the [Materials Project](https://next-gen.materialsproject.org/). This database holds data on 100,000's of materials (see Fig. 3). 
+The `SingingMaterials` package interfaces with the [Materials Project](https://next-gen.materialsproject.org/). This database holds data on 100,000's of materials (see Fig. 3). 
 The [Materials Project API](https://next-gen.materialsproject.org/api) gives access to vibrational data (and more) for thousands of materials.
 
 <figure>
@@ -80,5 +80,5 @@ If you want to edit or run the notebooks locally you will need to:
 - store the Materials Project API key in a `.env` file with the `MP_API_KEY` variable.
 - for choral sonifications, download the Solitary Choir samples, which are not distributed with this repository, and set the `PHONON_CHORAL_SAMPLES` variable in your `.env` file to the folder holding the `.wav` files.
 
-The commands in the `phonon_sonification` package also need [`ffmpeg`](https://ffmpeg.org/) on your path to mix sonifications together.
+The commands in the `SingingMaterials` package also need [`ffmpeg`](https://ffmpeg.org/) on your path to mix sonifications together.
 
